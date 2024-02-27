@@ -1,18 +1,10 @@
 package com.example.routes
 
 import com.example.controllers.IndexController
-import com.example.database.Database
-import com.example.models.User
-import com.example.repositories.UserRepository
-import io.ktor.server.application.*
-import io.ktor.server.request.*
-import io.ktor.server.response.*
-import io.ktor.server.routing.*
-import jdk.jshell.spi.ExecutionControl.UserException
-import org.jetbrains.exposed.sql.SchemaUtils
-import org.jetbrains.exposed.sql.insert
-import org.jetbrains.exposed.sql.transactions.transaction
-import org.koin.java.KoinJavaComponent.inject
+import io.ktor.server.application.call
+import io.ktor.server.routing.Route
+import io.ktor.server.routing.get
+import io.ktor.server.routing.post
 import org.koin.ktor.ext.inject
 
 fun Route.mainRoutes() {

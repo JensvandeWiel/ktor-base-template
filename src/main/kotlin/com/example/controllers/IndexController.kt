@@ -1,9 +1,9 @@
 package com.example.controllers
 
 import com.example.repositories.UserRepository
-import io.ktor.server.application.*
-import io.ktor.server.request.*
-import io.ktor.server.response.*
+import io.ktor.server.application.ApplicationCall
+import io.ktor.server.request.receive
+import io.ktor.server.response.respond
 
 class IndexController(private val userRepository: UserRepository) {
     suspend fun index(call: ApplicationCall) {

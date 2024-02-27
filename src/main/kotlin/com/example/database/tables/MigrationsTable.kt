@@ -1,9 +1,8 @@
 package com.example.database.tables
 
-import org.jetbrains.exposed.sql.*
+import org.jetbrains.exposed.sql.Table
 import org.jetbrains.exposed.sql.javatime.CurrentDateTime
 import org.jetbrains.exposed.sql.javatime.datetime
-import java.time.LocalDateTime.now
 
 object MigrationsTable : Table() {
     val id = integer("id").autoIncrement()

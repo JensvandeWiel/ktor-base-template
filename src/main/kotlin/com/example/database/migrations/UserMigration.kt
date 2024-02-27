@@ -3,7 +3,6 @@ package com.example.database.migrations
 import com.example.database.Database
 import com.example.database.Migration
 import com.example.database.MigrationName
-import org.jetbrains.exposed.sql.*
 import org.jetbrains.exposed.sql.transactions.transaction
 
 @MigrationName("2024_02_24_195301_create_users_table")

@@ -8,7 +8,6 @@ import com.typesafe.config.ConfigFactory
 import picocli.CommandLine
 import picocli.CommandLine.Command
 import picocli.CommandLine.Option
-import picocli.CommandLine.ParentCommand
 
 @Command(name = "root", mixinStandardHelpOptions = true, description = ["Run ktor server"], subcommands = [MigrateCommand::class, RollbackCommand::class])
 class RootCommand(val args: Array<String>) : Runnable {
